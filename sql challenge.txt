@@ -7,3 +7,12 @@ SELECT COUNT(*) FROM Invités;
 4
 SELECT COUNT(*) FROM Invités WHERE statut = 'Suspect';
 5
+SELECT * FROM Mouvements ORDER BY heure ASC LIMIT 1;
+6
+SELECT * FROM Mouvements ORDER BY heure DESC LIMIT 1;
+7
+Copy code
+SELECT Objets.nom_objet, rooms.nom 
+FROM Objets
+INNER JOIN rooms ON Objets.id_room = rooms.id_room
+ORDER BY rooms.nom;
