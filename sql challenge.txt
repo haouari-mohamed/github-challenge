@@ -1,0 +1,9 @@
+first one 
+SELECT * FROM Invités;
+second one 
+SELECT nom, statut FROM Invités;
+third one 
+SELECT COUNT(*) FROM Invités;
+4
+SELECT COUNT(*) FROM Invités WHERE statut = 'Suspect';
+5
